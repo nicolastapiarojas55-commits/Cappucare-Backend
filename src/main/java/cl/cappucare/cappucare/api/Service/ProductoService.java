@@ -1,5 +1,6 @@
-mport cl.cappucare.cappucare.api.model.Producto;
-import cl.cappucare.cappucare.api.repository.ProductoRepository;
+package cl.cappucare.cappucare.api.Service;
+import cl.cappucare.cappucare.api.Model.Productos;
+import cl.cappucare.cappucare.api.Repository.ProductoRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -15,24 +16,24 @@ public class ProductoService {
         this.repo = repo;
     }
 
-    public List<Producto> listar() {
+    public List<Productos> listar() {
         return repo.findAll();
     }
 
-    public Producto obtener(Long id) {
+    public Productos obtener(Long id) {
         return repo.findById(id).orElseThrow(() ->
                 new ResponseStatusException(HttpStatus.NOT_FOUND, "Producto " + id + " no existe"));
     }
 
-    public Producto crear(Producto p) {
+    public Productos crear(Productos p) {
         if (repo.existsById(p.getId())) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, "Ya existe el ID " + p.getId());
         }
         return repo.save(p);
     }
 
-    public Producto actualizar(Long id, Producto datos) {
-        Producto actual = obtener(id);
+    public Productos actualizar(Long id, Productos datos) {
+        Productos actual = obtener(id);
         actual.setNombre(datos.getNombre());
         actual.setDescripcion(datos.getDescripcion());
         actual.setCategoria(datos.getCategoria());

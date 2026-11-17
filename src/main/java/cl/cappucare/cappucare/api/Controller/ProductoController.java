@@ -1,5 +1,6 @@
-import cl.cappucare.cappucare.api.model.Producto;
-import cl.cappucare.cappucare.api.service.ProductoService;
+package cl.cappucare.cappucare.api.Controller;
+import cl.cappucare.cappucare.api.Model.Productos;
+import cl.cappucare.cappucare.api.Service.ProductoService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -17,17 +18,17 @@ public class ProductoController {
     }
 
     @GetMapping
-    public List<Producto> listar() { return service.listar(); }
+    public List<Productos> listar() { return service.listar(); }
 
     @GetMapping("/{id}")
-    public Producto obtener(@PathVariable Long id) { return service.obtener(id); }
+    public Productos obtener(@PathVariable Long id) { return service.obtener(id); }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Producto crear(@Valid @RequestBody Producto p) { return service.crear(p); }
+    public Productos crear(@Valid @RequestBody Productos p) { return service.crear(p); }
 
     @PutMapping("/{id}")
-    public Producto actualizar(@PathVariable Long id, @Valid @RequestBody Producto p) {
+    public Productos actualizar(@PathVariable Long id, @Valid @RequestBody Productos p) {
         return service.actualizar(id, p);
     }
 

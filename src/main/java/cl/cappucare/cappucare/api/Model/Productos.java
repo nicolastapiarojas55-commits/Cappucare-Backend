@@ -1,3 +1,4 @@
+package cl.cappucare.cappucare.api.Model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -7,7 +8,7 @@ import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "productos")
-public class Producto {
+public class Productos {
 
     @Id
     @NotNull
