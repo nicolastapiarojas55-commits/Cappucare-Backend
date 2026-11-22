@@ -93,7 +93,7 @@ El APK queda en `app/build/outputs/apk/release/`. La firma está configurada en 
 
 ## Planificación y trabajo en equipo
 
-Tablero de Trello: [COMPLETAR: link del tablero]
+Tablero de Trello: https://trello.com/b/MU26EMX2/app-cappucare
 
 ## Tecnologías
 
