@@ -2,6 +2,10 @@
 
 App móvil Android para controlar el inventario de productos e insumos médicos de la organización Cappucare: registra entradas y salidas de stock, avisa cuando un producto está bajo el mínimo y mantiene un historial de movimientos. Proyecto de la asignatura **DSY1105 – Desarrollo de Aplicaciones Móviles** (Duoc UC).
 
+## Link del repo del Frontend/App
+https://github.com/AlejandroRivera2005/CappucareSuministrosMedicos
+
+
 ## Repositorios del proyecto
 
 | Parte | Tecnología | Repositorio |
