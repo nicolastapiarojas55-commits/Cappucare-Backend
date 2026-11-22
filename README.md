@@ -6,8 +6,7 @@ App móvil Android para controlar el inventario de productos e insumos médicos 
 
 | Parte | Tecnología | Repositorio |
 |---|---|---|
-| App móvil | Kotlin + Jetpack Compose | [COMPLETAR: link del repo de la app] |
-| Microservicio (backend) | Spring Boot + PostgreSQL | [COMPLETAR: link del repo del backend] |
+| App móvil | Kotlin + Jetpack Compose | https://github.com/AlejandroRivera2005/CappucareSuministrosMedicos |
 
 ## 1. Nombre del proyecto
 
